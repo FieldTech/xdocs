@@ -9,22 +9,23 @@
 ```mermaid
 graph LR
     team([创建团队]) --> API[[API]]
-    team --> online([在线分析])
-    online --> analysis
-    API --> tools{支持工具}
-    subgraph 接入
+    team --手动选项--> online([在线分析])
+    online --> upload([上传日志])
+    upload --> run([运行])
+    run --> analysis
+    API --配置--> tools{选择接入}
+    subgraph 自动化过程
         tools --> GitHub([GitHub])
         tools --> GitLab([GitLab])
         tools --> Coding([Coding.net])
         tools --> Travis([TravisCI])
         tools --> Jenkins([Jenkins])
-    end
-    subgraph 自动化分析
-        GitHub --Action--> analysis((分析服务))
-        GitLab --job--> analysis
-        Coding --job--> analysis
-        Travis --job--> analysis
-        Jenkins --Plugin--> analysis
+        GitHub --Action--> auth((鉴权服务))
+        GitLab --job--> auth
+        Coding --job--> auth
+        Travis --job--> auth
+        Jenkins --Plugin--> auth
+        auth --> analysis((分析服务))
         analysis --> data[(指标数据)]
         analysis --> notice([邮件通知])
         data --> reports([报告])
