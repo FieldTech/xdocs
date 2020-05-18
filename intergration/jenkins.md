@@ -1,7 +1,14 @@
 # Jenkins
 
-如果您使用 Jenkins 来完成持续集成工作，可利用 Jenkins 插件 X-Developer Client Plugin ，简单地安装配置，即可完成集成。
-点此下载 X-Developer Jenkins 插件（后缀名为.hpi）。
+如果您使用 Jenkins 来完成持续集成工作，可通过安装配置 X-Developer Client Jenkins Plugin 完成集成。接入成功后无须人工干预，即可实现以下功能：
+
+- 代码提交后自动同步 X-Developer 最新的仓库数量、将分析服务状态更新为待分析
+- 每天 17:00 ~ 20:00，自动生成 GIT 日志并发送至 X-Developer 分析服务，运行分析
+- 每次分析完成后，发送邮件通知到团队创建者
+
+[下载 X-Developer Jenkins 插件](https://x-developer.cn/static/client/x-developer-client-1.0.hpi)（后缀名为.hpi）
+
+!> X-Developer Client Plugin 正在社区发布中，如果您通过我们的网站下载使用了此插件，建议后续在 Jenkins 插件中心升级最新版本。
 
 ## 安装配置
 

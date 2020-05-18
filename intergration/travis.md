@@ -1,6 +1,10 @@
 # TravisCI
 
-如果您使用 TravisCI 来完成持续集成工作，可直接调用 X-Developer 提供的 [xdclient](https://pypi.org/project/xdclient/) 模块通过 `.travis.yml` 完成命令行集成。
+如果您使用 TravisCI 来完成持续集成工作，可直接调用 X-Developer 提供的 [xdclient](https://pypi.org/project/xdclient/) 模块通过 `.travis.yml` 完成命令行集成。接入成功后无须人工干预，即可实现以下功能：
+
+- 代码提交后自动同步 X-Developer 最新的仓库数量、将分析服务状态更新为待分析
+- 每天 17:00 ~ 20:00，自动生成 GIT 日志并发送至 X-Developer 分析服务，运行分析
+- 每次分析完成后，发送邮件通知到团队创建者
 
 ## 配置环境变量
 
