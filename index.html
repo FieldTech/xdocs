@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>研发效能度量平台：X-Developer 官方文档</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
   <script src="//unpkg.com/mermaid@8.5.1/dist/mermaid.min.js"></script>
   <script>
-    var _hmt = _hmt || [];
-    (function () {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?a80f6a4e424165733ee8c6f8cc5d688a";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
+    if (document.location.host.indexOf("localhost") <= -1) {
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?a80f6a4e424165733ee8c6f8cc5d688a";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    }
   </script>
 </head>
+
 <body>
   <div id="app">加载中...</div>
   <script>
@@ -43,22 +48,22 @@
       copyCode: {
         buttonText: {
           '/': '点击复制',
-          '/ru/'   : 'Скопировать в буфер обмена',
+          '/ru/': 'Скопировать в буфер обмена',
           '/de-de/': 'Klicken Sie zum Kopieren',
-          '/es/'   : 'Haga clic para copiar',
-          '/en/'      : 'Copy to clipboard'
+          '/es/': 'Haga clic para copiar',
+          '/en/': 'Copy to clipboard'
         },
         errorText: {
           '/': '错误',
-          '/ru/'   : 'ошибка',
-          '/en/'      : 'Error'
+          '/ru/': 'ошибка',
+          '/en/': 'Error'
         },
         successText: {
           '/': '复制',
-          '/ru/'   : 'Скопировано',
+          '/ru/': 'Скопировано',
           '/de-de/': 'Kopiert',
-          '/es/'   : 'Copiado',
-          '/en/'      : 'Copied'
+          '/es/': 'Copiado',
+          '/en/': 'Copied'
         }
       },
       pagination: {
@@ -69,7 +74,7 @@
       },
       markdown: {
         renderer: {
-          code: function(code, lang) {
+          code: function (code, lang) {
             if (lang === "mermaid") {
               return (
                 '<div class="mermaid">' + mermaid.render('mermaid-svg-' + num++, code) + "</div>"
@@ -95,4 +100,5 @@
   <script src="//unpkg.com/prismjs/components/prism-python.min.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-yaml.min.js"></script>
 </body>
+
 </html>
