@@ -10,7 +10,36 @@ X-Developer 为您提供了基于 Git 的开发流程，包括开发纪律、分
 
 ## 管理策略
 
-X-Developer 推荐使用 `master` `dev` `feature` 作为固定分支，方便快速的日常协同。
+X-Developer 推荐使用 `master` `dev` `feature` 作为固定分支，方便快速的日常协同，`hotfix` 为线上修复临时分支，方便快速发布。各分支的创建和合并过程如下图所示：
+
+```mermaid
+gitGraph:
+options
+{
+  "nodeSpacing": 100,
+  "nodeRadius": 10
+}
+end
+commit
+branch dev
+checkout dev
+commit
+commit
+branch feature_no
+checkout feature_no
+commit
+commit
+checkout dev
+commit
+merge feature_no
+checkout master
+branch hotfix_no
+checkout hotfix_no
+commit
+checkout master
+merge hotfix_no
+merge dev
+```
 
 ### 角色与权限
 
@@ -79,6 +108,27 @@ git checkout dev
 git pull
 ```
 
+`dev` 分支上的代码最终合并至 `master` 进行发布，如下图所示。
+
+```mermaid
+gitGraph:
+options
+{
+  "nodeSpacing": 100,
+  "nodeRadius": 10
+}
+end
+commit
+branch dev
+checkout dev
+commit
+commit
+checkout master
+commit
+checkout master
+merge dev
+```
+
 > 适用于参与者角色：feature分支使用规范
 
 参与者只能使用 `feature` 分支进行单项任务开发。feature分支命名规则：`feature_{任务编号}` 。操作规范：
@@ -96,6 +146,33 @@ git status
 On branch feature_123
 ```
 
+`feature` 分支上的代码通过合并至 `dev` 进行评审和测试，最终由 `dev` 向 `master` 合并，完成发布。如下图所示：
+
+```mermaid
+gitGraph:
+options
+{
+  "nodeSpacing": 100,
+  "nodeRadius": 10
+}
+end
+commit
+branch dev
+checkout dev
+commit
+commit
+branch feature_123
+checkout feature_123
+commit
+commit
+checkout dev
+commit
+merge feature_123
+checkout master
+commit
+merge dev
+```
+
 #### 第五步，工作过程中合并dev分支最新代码
 
 为保证始终和团队代码一致，需要经常拉取和合并最新代码到本地，否则，等到完成 `feature` 时代码已经有很多的冲突了。操作如下：
@@ -105,6 +182,34 @@ git checkout dev #切换到dev分支
 git pull #获取dev分支最新代码
 git checkout feature_123 #切换到feature分支
 git merge dev #合并团队的代码
+```
+
+未完成开发或未有发布计划的 `feature` 分支应每天从 `dev` 分支获取最新代码，如下图所示：
+
+```mermaid
+gitGraph:
+options
+{
+  "nodeSpacing": 100,
+  "nodeRadius": 10
+}
+end
+commit
+branch dev
+checkout dev
+commit
+commit
+branch feature_123
+checkout feature_123
+commit
+commit
+checkout dev
+commit
+checkout feature_123
+merge dev
+checkout master
+commit
+merge dev
 ```
 
 合并过程中如果遇到冲突，可以使用 IDE 查看冲突，逐行解决，或请求高一级角色的员工协助解决。

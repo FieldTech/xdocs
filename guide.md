@@ -32,15 +32,7 @@ graph LR
     end
 ```
 
-您需要创建一个团队，并完成接入的配置。当前，X-Developer 提供了对 GitHub、GitLab、Coding.net、TravisCI 以及 Jenkins 等主流工具的集成：
-
-- [GitHub](intergration/github.md)
-- [GitLab](intergration/gitlab.md)
-- [Coding.net](intergration/coding.md)
-- [TravisCI](intergration/travis.md)
-- [Jenkins](intergration/jenkins.md)
-
-如果您使用的工具未在此列，请在平台上提交反馈，或直接联系我们：[support@withfield.tech](mailto:support@withfield.tech)
+您需要创建一个团队，获取 API 信息后，完成对应工具接入的配置，X-Developer 即可开启自动化的效能分析。
 
 !> X-Developer 也提供了在线分析功能，方便您进行尝试，但它是手动的，不适合持续的分析。
 
@@ -57,6 +49,18 @@ graph LR
 ### 获得接入信息
 
 进入 [API](https://x-developer.cn/accounts/api) 页面，您可以查看 `APPID` `APPKEY` 及已创建团队的 `TEAMID` 。
+
+## 自动化分析
+
+当前，X-Developer 提供了对 GitHub、GitLab、Coding.net、TravisCI 以及 Jenkins 等主流工具的集成。选择您使用的工具，参照以下说明文档进行配置接入：
+
+- [GitHub](intergration/github.md)：最强大的在线代码托管平台
+- [GitLab](intergration/gitlab.md)：绝大多数企业自建私有代码托管平台的首选
+- [Coding.net](intergration/coding.md)：国产在线代码托管平台，提供私有部署
+- [TravisCI](intergration/travis.md)：主流的持续集成云平台
+- [Jenkins](intergration/jenkins.md)：主流的持续集成开源工具
+
+如果您使用的工具未在此列，请在平台上提交反馈，或直接联系我们：[support@withfield.tech](mailto:support@withfield.tech)
 
 ## 在线分析
 
