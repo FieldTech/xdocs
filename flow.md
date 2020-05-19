@@ -37,6 +37,7 @@ branch hotfix_no
 checkout hotfix_no
 commit
 checkout master
+commit
 merge hotfix_no
 merge dev
 ```
@@ -63,13 +64,91 @@ hotfix_{no}|	指定解决者	|修复分支	|按合并构建	|测试环境
 
 从本地向 `dev` 分支提交，发布前开发人员向 `master` 提交合并请求，由技术负责人审核代码变更并完成 `master` 合并。
 
+```mermaid
+gitGraph:
+options
+{
+  "nodeSpacing": 100,
+  "nodeRadius": 10
+}
+end
+commit
+branch dev
+checkout dev
+commit
+branch local_dev1
+checkout local_dev1
+commit
+checkout dev
+branch local_dev2
+checkout local_dev2
+commit
+checkout dev
+commit
+merge local_dev1
+commit
+merge local_dev2
+checkout master
+commit
+merge dev
+```
+
 #### 生产环境发布
 
 合并 `master` 后，技术负责人在本地 `dry run` ，成功后根据 CI 策略自动化或手动发布生产环境，并测试生产环境主要功能。
 
+
+`dev` 分支上的代码最终合并至 `master` 进行发布，如下图所示。
+
+```mermaid
+gitGraph:
+options
+{
+  "nodeSpacing": 100,
+  "nodeRadius": 10
+}
+end
+commit
+branch dev
+checkout dev
+commit
+commit
+checkout master
+commit
+checkout master
+merge dev
+```
+
 #### 线上缺陷修复
 
 从 `master` 建立 `hotfix_{no}` 分支，修改完成后提交向 `master` ，然后向 `dev` 合并。
+
+```mermaid
+gitGraph:
+options
+{
+  "nodeSpacing": 100,
+  "nodeRadius": 10
+}
+end
+commit
+branch dev
+checkout dev
+commit
+commit
+checkout master
+branch hotfix_no
+checkout hotfix_no
+commit
+checkout master
+commit
+merge hotfix_no
+checkout dev
+merge master
+checkout master
+commit
+merge dev
+```
 
 ## 使用规范
 
@@ -106,27 +185,6 @@ git branch
 ```bash
 git checkout dev
 git pull
-```
-
-`dev` 分支上的代码最终合并至 `master` 进行发布，如下图所示。
-
-```mermaid
-gitGraph:
-options
-{
-  "nodeSpacing": 100,
-  "nodeRadius": 10
-}
-end
-commit
-branch dev
-checkout dev
-commit
-commit
-checkout master
-commit
-checkout master
-merge dev
 ```
 
 > 适用于参与者角色：feature分支使用规范
