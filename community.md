@@ -16,9 +16,6 @@ X-Developer 计划向 Jenkins X 提供 **工程效率度量** 的云原生解决
 
 ### Conventional Commits `发布`
 
-[![npm version](https://img.shields.io/npm/v/@fieldtech/simple-conventional-changelog/latest.svg)](https://www.npmjs.org/package/@fieldtech/simple-conventional-changelog)
-[![npm downloads](https://img.shields.io/npm/dm/@fieldtech/simple-conventional-changelog.svg)](http://npm-stat.com/charts.html?package=@fieldtech/simple-conventional-changelog&from=2020-04-02)
-
 [Conventional Commits]((https://conventionalcommits.org)) 由 Google Angular.js 项目团队发起，致力于构建人与机器能够共同理解的代码提交标准，以更好地利用语义化工具提升软件构建、部署和发布的工程效率，当前已发布 `V1.0 规范` ：
 
 - 自动化生成变更日志

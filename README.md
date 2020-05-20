@@ -1,3 +1,7 @@
+| :mega: :mega: :mega: |
+| :----: |
+| X-Developer 现已提供包括 GitHub、GitLab、Coding.net、TravisCI、Jenkins 等主流平台工具的集成支持。|
+
 # 快速上手
 
 > X-Developer 是构建在 DevOps、CI/CD 之上的研发效能度量工具，与代码提交流程无缝结合，利用无须人工干预的真实数据进行效率分析，帮助开发团队实现更加精益高效的旅程。
