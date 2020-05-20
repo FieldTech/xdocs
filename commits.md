@@ -64,6 +64,23 @@ git cz
 
 ![](_media/add-commit.png)
 
+### 提交类型说明
+
+类型 | 类型说明 | 描述
+:----------- | :----------- | :-----------
+feat   |     Features   |      新功能
+change    |   Changes  |      需求变更
+fix   |     Bug Fixes    |      缺陷修复
+test   |     Tests    |      新增或修改测试代码
+docs  |     Documentation |      文档变更
+style |     Styles     |      代码格式调整，未涉及功能修改（如对齐、补全分号）
+refactor  |     Code Refactoring     |     代码重构，未涉及功能或缺陷修复
+perf   |     Performance Improvements    |      性能优化
+build   |     Builds  |     构建工具或依赖管理调整
+ci   |    Continuous Integrations    |     自动化构建脚本变更
+chore   |     Chores    |     其它非代码或测试的变更
+revert   |     Reverts    |     恢复到上一次版本
+
 ---
 
 ## 高级配置

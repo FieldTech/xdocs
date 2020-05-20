@@ -10,6 +10,10 @@ X-Developer 通过开源工具、三方集成以及解决方案提供，与敏�
 
 与 Tid、DevOpsDays 进行长期的合作，向社区分享研发效能领域的趋势与实践。
 
-## 厂商及服务商
+## 平台服务商
 
 向研发管理、云平台服务商以及数字化转型服务商提供 **研发效能度量解决方案** 集成，共同促进客户的数字化能力提升。
+
+### GitHub Marketplace
+
+X-Developer 向 GitHub 市场发布了 [X-Developer Analysis Action](https://github.com/marketplace/actions/x-developer-analysis-action) ，方便 GitHub 用户快速地集成研发效能分析功能。

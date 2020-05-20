@@ -50,22 +50,18 @@ X-Developer 构建在 CI/CD 工具之上，为 DevOps 的持续管理优化、�
 
 ```mermaid
 graph LR
-    team([创建团队]) --> API[[API]]
-    API --配置--> tools{CI/CD}
+    dev(开发者) --提交/合并--> push[[代码]]
+    push --> Git[(Git仓库)]
+    x(X-Developer) --接入--> tools([CI/CD 工具])
+    tools --监听--> Git
     subgraph 自动化过程
-        tools --> GitHub([GitHub])
-        tools --> GitLab([GitLab])
-        tools --> Coding([Coding.net])
-        tools --> Travis([TravisCI])
-        tools --> Jenkins([Jenkins])
-        GitHub --Action--> auth((鉴权服务))
-        GitLab --job--> auth
-        Coding --job--> auth
-        Travis --job--> auth
-        Jenkins --Plugin--> auth
+        tools --调用--> xd(X-Developer集成工具)
+        xd --> auth((鉴权服务))
+        xd --生成--> log[[Git日志]]
         auth --> analysis((分析服务))
-        analysis --> data[(指标数据)]
-        analysis --> notice([邮件通知])
+        analysis --获取--> log
+        analysis --生成--> data[(指标数据)]
+        analysis --发送--> notice([邮件通知])
         data --> reports([报告])
     end
 ```
