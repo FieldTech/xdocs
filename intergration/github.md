@@ -6,7 +6,7 @@
 - 每天 17:00 ~ 20:00，自动生成 GIT 日志并发送至 X-Developer 分析服务，运行分析
 - 每次分析完成后，发送邮件通知到团队创建者
 
-## 配置 GitHub Secrets
+## 配置 Secrets
 
 进入仓库 Settingt -> Secrets, 创建 `APPID` `APPKEY` `TEAMID` 并配置对应的值。
 

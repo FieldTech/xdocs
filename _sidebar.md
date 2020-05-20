@@ -1,15 +1,20 @@
-- 产品介绍
-    - [X-Developer](README.md)
+- 开始使用
+    - [快速上手](README.md)
+    - 接入 CI/CD
+        - [GitHub](intergration/github.md)
+        - [GitLab](intergration/gitlab.md)
+        - [Coding.net](intergration/coding.md)
+        - [TravisCI](intergration/travis.md)
+        - [Jenkins](intergration/jenkins.md)
+    - [常见问题](faq.md)
+    - [版本更新](updates.md)
+- 解决方案
     - [核心优势](advantage.md)
-- 使用规范
-    - [开发流程](flow.md)
-    - [代码提交](commits.md)
-- 使用指南
-    - [快速上手](guide.md)
-- 如何接入
-    - [GitHub](intergration/github.md)
-    - [GitLab](intergration/gitlab.md)
-    - [Coding.net](intergration/coding.md)
-    - [TravisCI](intergration/travis.md)
-    - [Jenkins](intergration/jenkins.md)
-- [常见问题](faq.md)
+    - [产品说明](introduction.md)
+    - 开发流程标准化
+        - [GIT 管理规范](flow.md)
+        - [代码提交工具](commits.md)
+- 关于我们
+    - [场量科技](fieldtech.md)
+    - [社区贡献](community.md)
+    - [合作关系](partners.md)

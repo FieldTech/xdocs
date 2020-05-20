@@ -10,19 +10,19 @@
 
 !> X-Developer Client Plugin 正在社区发布中，如果您通过我们的网站下载使用了此插件，建议后续在 Jenkins 插件中心升级最新版本。
 
-## 安装配置
+## 安装配置插件
 
 ### 插件安装
 
 进入Jenkins管理界面-->管理插件-->高级，上传插件界面中，选择您下载的插件文件，上传后将自动安装，无须重新启动。
 
-### 全局配置
+### 配置账户
 
 进入Jenkins管理界面，您将看到 X-Developer Client Plugin 配置项，填写 APP ID 和 APP KEY，点击 Test connection，如果正确将返回“X-Developer 认证成功”。
 
 ![](../_media/jenkins-global-config.png)
 
-### 流水线配置
+## 配置流水线
 
 在团队的构建流水线上，添加“构建后操作”，选择 X-Developer 团队效能分析。
 

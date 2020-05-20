@@ -1,4 +1,4 @@
-# X-Developer <small>1.3</small>
+# X-Developer <small>v1.3</small>
 
 > 让研发更精益、更高效 :rocket::rocket::rocket:
 
@@ -7,4 +7,4 @@
 - 驱动研发绩效水平提升
 
 [GitHub](https://github.com/FieldTech/xdocs/)
-[开始使用](#X-Developer)
+[开始使用](#快速上手)
