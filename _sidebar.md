@@ -13,6 +13,7 @@
     - [产品说明](introduction.md)
     - 开发流程标准化
         - [GIT 管理规范](flow.md)
+        - [提交注释规范](commit-comment.md)
         - [代码提交工具](commits.md)
     - [实时自动化度量](automation.md)
 - 关于我们

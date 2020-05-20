@@ -14,20 +14,11 @@ Jenkins 作为主流的 CI/CD 开源工具，X-Developer 率先完成了集成�
 
 X-Developer 计划向 Jenkins X 提供 **工程效率度量** 的云原生解决方案。
 
-### Conventional Commits `发布`
+## Conventional Commits
 
-[Conventional Commits]((https://conventionalcommits.org)) 由 Google Angular.js 项目团队发起，致力于构建人与机器能够共同理解的代码提交标准，以更好地利用语义化工具提升软件构建、部署和发布的工程效率，当前已发布 `V1.0 规范` ：
+`Conventional Commits` 致力于构建人与机器均能理解的代码提交注释规范，由 Google Angular.js 团队发起，当前已发布 `1.0` 标准。
 
-- 自动化生成变更日志
-- 根据提交类型，自动化地设置语义化版本
-- 向团队成员、用户及其它利益相关者沟通产品功能变更
-- 触发构建和发布流程
-- 使新成员更容易加入到项目工作中来，因为他们可以通过注释了解代码变更的历史
-
-X-Developer 基于 Conventional Commits 构建了一个更加 [简洁的提交风格](https://github.com/FieldTech/conventional-commit-types-zh-cn) 和 [代码提交工具](https://github.com/FieldTech/simple-conventional-changelog) ，适用于国内大规模的企业级开发：
-
-- 国内开发团队的规模和需求规模更大，改动更频繁，不适用于在单个 `pull request` 的提交注释中描述完整的需求
-- 使用一行带有需求编号、提交类型和说明的注释规范来说明提交变更
+X-Developer 构建了更为简洁的 [Simple Conventional Changelog](https://github.com/FieldTech/simple-conventional-changelog) 注释风格与自动化提交工具，帮助大规模的企业级团队更快速地完成代码提交规范化流程。
 
 ## DevOpsDays
 
