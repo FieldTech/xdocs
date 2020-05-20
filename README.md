@@ -36,7 +36,7 @@ graph LR
 
 创建团队，获得 API 信息后，完成对应 CI/CD 工具接入的配置，即可开启 X-Developer 自动化效能分析。
 
-!> X-Developer 也提供了在线分析功能，方便您进行快速的数据分析尝试。
+!> X-Developer 也提供了手动分析功能，方便您进行快速的数据分析尝试。
 
 ## 创建团队
 
@@ -64,11 +64,19 @@ graph LR
 
 如果您使用的工具未在此列，请在平台上提交反馈，或直接联系我们：[support@withfield.tech](mailto:support@withfield.tech)
 
-## 在线分析
+## 手动分析
 
-如果您对 `Git` 使用非常熟练，并希望快捷地尝试 X-Developer 分析功能，可以使用在线分析，使用您自行准备的日志，五分钟左右即可查看分析报告。
+!> 此为可选项，适用于快速试用场景。
 
-选择“在线分析”，在弹出界面中选择您生成的日志，再点击“查看报告”。
+如果您对 Git 工具使用非常熟练，并希望快捷地尝试 X-Developer 分析功能，可以手动生成 Git 日志并运行手动分析，五分钟左右即可查看分析报告。
+
+进入待分析的 Git 仓库，运行 Git 日志生成的命令如下：
+
+```bash
+git log --pretty=format:"%an,%ae,%ad,%s" >> commits.csv
+```
+
+选择“手动分析”，在弹出界面中选择您生成的日志 `commits.csv` ，再点击“查看报告”。
 
 ![](_media/online-analysis.png)
 

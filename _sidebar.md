@@ -14,6 +14,7 @@
     - 开发流程标准化
         - [GIT 管理规范](flow.md)
         - [代码提交工具](commits.md)
+    - [实时自动化度量](automation.md)
 - 关于我们
     - [场量科技](fieldtech.md)
     - [社区贡献](community.md)
