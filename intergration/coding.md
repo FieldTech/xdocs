@@ -1,6 +1,6 @@
 # Coding.net
 
-Coding 是一款国产研发管理平台，提供了 Git 代码仓库和持续集成功能。您可以通过 Coding 的持续集成 `Jenkinsfile` 与 X-Developer 实现连接，自动化地完成效能分析：
+Coding 是一款国产研发管理平台，提供了 Git 代码仓库和持续集成功能。您可以通过内置的持续集成 `Jenkinsfile` 与 X-Developer 实现连接，自动化地完成效能分析：
 
 - 代码提交后自动同步 X-Developer 最新的仓库数量、将分析服务状态更新为待分析
 - 每天 17:00 ~ 20:00，自动生成 GIT 日志并发送至 X-Developer 分析服务，运行分析
@@ -8,13 +8,13 @@ Coding 是一款国产研发管理平台，提供了 Git 代码仓库和持续�
 
 ## 配置凭据
 
-进入您的 Coding 项目，点击页面左下侧的“项目设置”，选择“开发者管理”——“凭据管理”，点击“录入凭据”。
+进入您的 Coding 项目，点击左侧菜单底部的“项目设置”，选择“开发者管理”——“凭据管理”，点击“录入凭据”。
 
 选择凭据类型为“用户名+密码”，将您的 `APPID` 填写至用户名， `APPKEY` 填写至密码栏。因为需要在持续集成中使用，注意勾选下方的“授权所有持续集成构建计划”。
 
 ![](../_media/coding-add-appid.png)
 
-录入完成后，记录“凭据管理”下的凭据ID待用。
+记录“凭据管理”下的凭据ID待用。
 
 ![](../_media/coding-credentials.png)
 
@@ -24,7 +24,7 @@ Coding 是一款国产研发管理平台，提供了 Git 代码仓库和持续�
 
 ![](../_media/coding-ci.png)
 
-Coding.net 将为您创建一个 `Jenkinsfile`，配置以下 `pipeline` 语句，环境变量中的 `TEAM` 为您创建的 X-Developer 团队的 `TEAMID`，credentialsId 为 “凭据管理”下的凭据ID。
+Coding 将为您创建一个 `Jenkinsfile`，配置以下 `pipeline` 语句，环境变量中的 `TEAM` 为您创建的 X-Developer 团队的 `TEAMID`，credentialsId 为 “凭据管理”下的凭据ID。
 
 ```yaml
 pipeline {
@@ -75,7 +75,7 @@ pipeline {
 
 ## 运行 pipeline
 
-签入 `pipeline` 文件，运行成功后显示如下。
+签入 `pipeline` 文件，将触发自动运行，成功后显示如下。
 
 ![](../_media/coding-ci-result.png)
 

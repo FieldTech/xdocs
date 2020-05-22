@@ -91,3 +91,5 @@ git log --pretty=format:"%an,%ae,%ad,%s" >> commits.csv
 X-Developer 分析完成后，您将进入“概览”界面，向您呈现了项目的近期进展。
 
 ![](_media/reports-progress.png)
+
+接下来您可以了解我们产品的 [核心优势](advantage) ，或 [常见问题](faq) 。
