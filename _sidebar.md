@@ -16,6 +16,7 @@
         - [提交注释规范](commit-comment.md)
         - [代码提交工具](commits.md)
     - [实时自动化度量](automation.md)
+    - [应用场景](usage.md)
 - 关于我们
     - [场量科技](fieldtech.md)
     - [社区贡献](community.md)
