@@ -6,9 +6,9 @@ X-Developer 面向 DevOps、CI/CD 社区，积极提供开源工具以及知识�
 
 Jenkins 作为主流的 CI/CD 开源工具，X-Developer 率先完成了集成和社区贡献。
 
-### Jenkins 2.0 `审核中`
+### Jenkins 2.0 `发布中`
 
-通过开源的 [Jenkins XClient Plugin](https://github.com/FieldTech/x-developer-client-plugin)，向社区提供 X-Developer 的插件接入方案。
+通过开源的 [Jenkins XClient Plugin](https://github.com/jenkinsci/x-developer-client-plugin)，向社区提供 X-Developer 的插件接入方案。
 
 ### Jenkins X `计划`
 

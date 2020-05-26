@@ -4,7 +4,7 @@ X-Developer 通过开源工具、三方集成以及解决方案提供，与敏�
 
 ## 开源组织
 
-面向 DevOps、CI/CD 开源组织与项目提供集成工具贡献，致力于推动软件工程语义化和新一代云原生 CI/CD 工具发展。
+我们是 [@jenkinsci](https://github.com/jenkinsci) 贡献者，并持续面向 DevOps、CI/CD 开源组织与项目提供集成工具贡献，致力于推动软件工程语义化和新一代云原生 CI/CD 工具发展。
 
 ## 社区组织
 

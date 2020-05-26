@@ -33,8 +33,10 @@ graph LR
         Jenkins --Plugin--> auth
         auth --> analysis((分析服务))
         analysis --> data[(指标数据)]
-        analysis --> notice([邮件通知])
-        data --> reports([报告])
+        analysis --> notice(邮件通知)
+        data --> reports(报告)
+        style reports fill:#f9f,stroke:#333,stroke-width:4px
+        style notice fill:#bbf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5
     end
 ```
 

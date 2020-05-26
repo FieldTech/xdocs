@@ -61,8 +61,10 @@ graph LR
         auth --> analysis((分析服务))
         analysis --获取--> log
         analysis --生成--> data[(指标数据)]
-        analysis --发送--> notice([邮件通知])
-        data --> reports([报告])
+        analysis --发送--> notice(邮件通知)
+        data --> reports(报告)
+        style reports fill:#f9f,stroke:#333,stroke-width:4px
+        style notice fill:#bbf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5
     end
 ```
 

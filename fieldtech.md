@@ -23,7 +23,7 @@
 - WebShpere、Apache、Tomcat 部署
 - Spring Boot 微服务部署
 
-### 招行精益看板应用
+### 招商银行精益看板应用
 
 国内首个基于研发过程数据度量进行效能改进的案例。我们通过对需求变化率、团队结构以及可视化浪费的分析，帮助试点团队取得 **超过80%** 的流动效率提升。在此项目中，我们展示了：
 
@@ -40,4 +40,4 @@
 
 ## 联系方式
 
-除通过公开渠道给我们留言之外，您还可以通过邮件与我们直接联系：[support@withfield.tech](mailto:support@withfield.tech)
+如您对我们的产品及服务有任何建议，请联系：[support@withfield.tech](mailto:support@withfield.tech) 我们将在 2 个工作日内回复。
