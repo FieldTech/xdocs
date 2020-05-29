@@ -15,7 +15,10 @@
         - [GIT 管理规范](flow.md)
         - [提交注释规范](commit-comment.md)
         - [代码提交工具](commits.md)
-    - [实时自动化度量](automation.md)
+    - 研发效能管理
+        - [集成 DevOps](dem/devops.md)
+        - [不同组织结构的应用](dem/structure.md)
+        - [团队效能管理](dem/team.md)
     - [应用场景](usage.md)
 - 关于我们
     - [场量科技](fieldtech.md)
