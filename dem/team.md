@@ -26,7 +26,7 @@
 
 ## 看板
 
-X-Developer 提供了自动化的看板，来展示项目的进度和任务的状态细节。
+X-Developer 提供了自动化的看板，来展示项目的进度和任务的状态细节（参考：[自动化看板应用](dem/kanban) ）。
 
 ![](../_media/team-kanban.jpg)
 

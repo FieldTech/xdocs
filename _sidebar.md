@@ -18,6 +18,7 @@
     - 研发效能管理
         - [集成 DevOps](dem/devops.md)
         - [不同组织结构的应用](dem/structure.md)
+        - [自动化看板应用](dem/kanban.md)
         - [团队效能管理](dem/team.md)
     - [应用场景](usage.md)
 - 关于我们
