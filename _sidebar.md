@@ -6,6 +6,7 @@
         - [Coding.net](intergration/coding.md)
         - [TravisCI](intergration/travis.md)
         - [Jenkins](intergration/jenkins.md)
+    - [使用权限](permission.md)
     - [常见问题](faq.md)
     - [版本更新](updates.md)
 - 解决方案
