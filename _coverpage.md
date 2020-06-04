@@ -7,4 +7,4 @@
 - 驱动研发绩效水平提升
 
 [GitHub](https://github.com/FieldTech/xdocs/)
-[开始使用](#快速上手)
+[开始使用](#x-developer-文档)

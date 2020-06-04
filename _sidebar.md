@@ -1,5 +1,5 @@
 - 开始使用
-    - [快速上手](README.md)
+    - [快速上手](guide.md)
     - 接入 CI/CD
         - [GitHub](intergration/github.md)
         - [GitLab](intergration/gitlab.md)

@@ -1,64 +1,45 @@
+<div align="center">
+
+# X-Developer 文档
+
+提供研发效能度量管理平台 [X-Developer](https://x-developer.cn) 的使用说明、领域知识和资源
+
+</div>
+
 | :mega: :mega: :mega: |
 | :----: |
 | X-Developer 现已提供包括 GitHub、GitLab、Coding.net、TravisCI、Jenkins 等主流平台工具的集成支持。|
 
-# 快速上手
+> 人机协作时代的研发管理利器 :rocket::rocket::rocket:
 
-> X-Developer 是构建在 DevOps、CI/CD 之上的研发效能度量工具，与代码提交流程无缝结合，利用无须人工干预的真实数据进行效率分析，帮助开发团队实现更加精益高效的旅程。
+数字化企业时代，越来越多的内部流程、活动将由人工协同转为自动化流转，软件研发由局部的 CI/CD 工具实施转入全面的 DevOps 开发运维一体化。管理的挑战，已经不止于人与人之间的高效协同，而是人与机器的自动化协同。
 
-申请 X-Developer 帐号之后，您将进入工作台页面，在这里可以看到所有已创建项目信息，以及帐户、订单、积分、发票和API菜单入口。
+X-Developer 作为全球第一款事实数据型研发效能平台，我们首推国内领先的 **流程-度量-绩效** 闭环的解决方案，帮助企业提升研发管理的数字化能力。
 
-## 使用流程
+## 新手必读
 
-我们先熟悉一下它的使用流程，如下图所示，创建团队获得 API 信息后，完成对应 CI/CD 工具接入的配置，即可开启 X-Developer 自动化效能分析。
+- [快速上手](guide) - 适用于零基础新手使用者，五分钟即获得一份研发效能度量报告
+- [使用权限](permission) - 进一步了解公开和私有团队的区别和角色权限划分
+- [常见问题](faq) - 收集整理了用户关心的一些疑问和解答，持续更新中 :construction:
 
-```mermaid
-graph LR
-    team([创建团队]) --> API[[API]]
-    team --手动选项--> online([在线分析])
-    online --> upload([上传日志])
-    upload --> run([运行])
-    run --> analysis
-    API --配置--> tools{CI/CD}
-    subgraph 自动化过程
-        tools --> GitHub([GitHub])
-        tools --> GitLab([GitLab])
-        tools --> Coding([Coding.net])
-        tools --> Travis([TravisCI])
-        tools --> Jenkins([Jenkins])
-        GitHub --Action--> auth((鉴权服务))
-        GitLab --job--> auth
-        Coding --job--> auth
-        Travis --job--> auth
-        Jenkins --Plugin--> auth
-        auth --> analysis((分析服务))
-        analysis --> data[(指标数据)]
-        analysis --> notice(邮件通知)
-        data --> reports(报告)
-        style reports fill:#f9f,stroke:#333,stroke-width:4px
-        style notice fill:#bbf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5
-    end
-```
+### 领导必读
 
-X-Developer 的手动分析功能，方便您利用手动生成的 Git 日志，快速进行效能分析试用。
+- [核心优势](advantage) - X-Developer 解决什么样的问题，有什么不同的优势？:sparkles:
+- [产品说明](introduction) - X-Developer 如何帮助您的组织实现目标？:rocket:
+- [应用场景](usage) - 我们整理了一些应用场景，仍在持续更新中 :construction:
 
-## 创建团队
+## 准备试用
 
-如果您是首次使用 X-Developer ，工作台默认会出现创建团队的提示。
+- [GIT管理规范](flow) - 正式使用我们的产品之前，请阅读和了解相关的管理规范
+- [不同组织结构的应用](structure) - 了解您的组织结构与研发效能度量的差异化关注点
 
-![](_media/create-team.png)
+### 特性说明
 
-完成团队创建后，将进入空白的团队界面，并提示您运行分析。
+- [团队效能管理](team)
+- [自动化看板](kanban)
+- [代码提交工具](commits)
 
-![](_media/wait-analysis.png)
-
-### 获得接入信息
-
-进入 [API](https://x-developer.cn/accounts/api) 页面，您可以查看 `APPID` `APPKEY` 及已创建团队的 `TEAMID` 。
-
-## 自动化分析
-
-当前，X-Developer 提供了对 GitHub、GitLab、Coding.net、TravisCI 以及 Jenkins 等主流工具的集成。选择您使用的工具，参照以下说明文档进行配置接入：
+### 集成 CI/CD 工具
 
 - [GitHub](intergration/github.md)：最强大的在线代码托管平台
 - [GitLab](intergration/gitlab.md)：绝大多数企业自建私有代码托管平台的首选
@@ -66,32 +47,21 @@ X-Developer 的手动分析功能，方便您利用手动生成的 Git 日志，
 - [TravisCI](intergration/travis.md)：主流的持续集成云平台
 - [Jenkins](intergration/jenkins.md)：主流的持续集成开源工具
 
-如果您使用的工具未在此列，请在平台上提交反馈，或直接联系我们：[support@withfield.tech](mailto:support@withfield.tech)
+## 需要支持
 
-## 手动分析
+如果您需要任何帮助与支持，请在平台上提交反馈（即点击产品顶部工具条的反馈按钮），或直接联系我们：[support@withfield.tech](mailto:support@withfield.tech)
 
-!> 此为可选项，适用于快速试用场景。
+### 企业试用
 
-如果您对 Git 工具使用非常熟练，并希望快捷地尝试 X-Developer 分析功能，可以手动生成 Git 日志并运行手动分析，五分钟左右即可查看分析报告。
+X-Developer 面向默认注册用户开放“协作版”功能。如您的企业需要试用 X-Developer 的全部功能，需满足以下条件：
 
-进入待分析的 Git 仓库，运行 Git 日志生成的命令如下：
+- 使用**企业域名邮箱**注册用户
+- 通过平台提交反馈或邮箱联系我们**开通试用VIP权限**
 
-```bash
-git log --pretty=format:"%an,%ae,%ad,%s" >> commits.csv
-```
+一般情况下，我们会提供 2 个企业版试用许可证和 2 周的试用时间，以供您创建 2 个私有团队进行数据测试。
 
-选择“手动分析”，在弹出界面中选择您生成的日志 `commits.csv` ，再点击“查看报告”。
+您也可以选择使用公开团队进行测试，基于 X-Developer 的[角色权限管理机制](permission)，第三方**无法**访问您的数据。但只有在开通VIP权限的情况下，您才能查看到**所有**数据报告。
 
-![](_media/online-analysis.png)
+## 版权声明
 
-如果您的日志是从 `master` 导出，请勾选“Git仓库主干日志”，点击“查看报告”后，X-Developer 会启动分析。
-
-![](_media/online-analysising.png)
-
-## 查看报告
-
-X-Developer 分析完成后，您将进入“概览”界面，向您呈现了项目的近期进展。
-
-![](_media/reports-progress.png)
-
-接下来您可以了解我们产品的 [核心优势](advantage) ，或 [常见问题](faq) 。
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br /><a xmlns:dct="http://purl.org/dc/terms/" href="https://fieldtech.github.io/xdocs" property="dct:title" rel="dct:type">X-Developer 产品文档</a> 由 <a xmlns:cc="http://creativecommons.org/ns#" href="http://withfield.tech" property="cc:attributionName" rel="cc:attributionURL">场量科技</a> 采用 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享 署名-非商业性使用-禁止演绎 4.0 国际 许可协议</a> 进行许可。
