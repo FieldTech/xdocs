@@ -20,7 +20,7 @@ X-Developer 的分析项目（以下简称团队）分为**公开**和**私有**
 
 公开团队在数据分析完成后，会被展示到 X-Developer 的 [公开团队](https://x-developer.cn/projects/) 区域，所有的访客（包括匿名访客）都能查看到项目的卡片信息，如下所示：
 
-![](../_media/team.jpg)
+![](_media/team.jpg)
 
 如果您希望查看公开项目的内部数据，您需要先成为注册用户，再确认在团队中的开发者身份。
 
@@ -28,7 +28,7 @@ X-Developer 的分析项目（以下简称团队）分为**公开**和**私有**
 
 默认情况下（即创建者没有进行任何的成员角色权限配置），公开团队仅有创建者能够访问内部数据，其它用户访问会看到“没有权限”的错误页。
 
-![](../_media/team-permission-denied.jpg)
+![](_media/team-permission-denied.jpg)
 
 ### 开发者访问权限
 
@@ -41,19 +41,19 @@ X-Developer 的分析项目（以下简称团队）分为**公开**和**私有**
 1. 点击进入一个公开团队，在权限提示页面（如上图所示）点击“我是开发者”；
 2. 在团队成员验证页面上，输入您用于 Git 提交代码时配置的邮箱，点击“验证并加入团队”；
 
-![](../_media/team-developer-apply.jpg)
+![](_media/team-developer-apply.jpg)
 
 3. 如果验证不通过，您将会看到“未找到此邮箱的开发人员信息”的错误提示；
 
-![](../_media/team-developer-not-found.jpg)
+![](_media/team-developer-not-found.jpg)
 
 4. 如果验证通过，您将收到权限开通的邮件。
 
-![](../_media/team-developer-validation.jpg)
+![](_media/team-developer-validation.jpg)
 
 5. 在邮件中点击“确认加入”即可关联帐号，并进入团队主页。
 
-![](../_media/team-developer-email.jpg)
+![](_media/team-developer-email.jpg)
 
 ## 私有团队
 
@@ -63,7 +63,7 @@ X-Developer 的分析项目（以下简称团队）分为**公开**和**私有**
 
 目前仅有项目创建者和管理员能够配置私有团队的成员角色权限。进入团队之后，在页面头部的右侧功能图标区域，点击最后一个图标“成员管理”，即进入配置页面。
 
-![](../_media/team-config.jpg)
+![](_media/team-config.jpg)
 
 在配置页面，您可以添加管理员、产品经理、团队管理者及开发人员，并为他们开设帐号。
 
