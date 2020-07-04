@@ -2,19 +2,17 @@
 
 # X-Developer 文档
 
-提供研发效能度量管理平台 [X-Developer](https://x-developer.cn) 的使用说明、领域知识和资源
+研发效能度量与优化的领域知识、资源和工具使用说明
 
 </div>
 
 | :mega: :mega: :mega: |
 | :----: |
-| X-Developer 现已提供包括 GitHub、GitLab、Coding.net、TravisCI、Jenkins 等主流平台工具的集成支持。|
+| X-Developer 现已发布整体的解决方案服务体系，基于度量，帮助组织全方位提升研发效能。|
 
-> 人机协作时代的研发管理利器 :rocket::rocket::rocket:
+> 研发效能度量与优化解决方案 :rocket::rocket::rocket:
 
-数字化企业时代，越来越多的内部流程、活动将由人工协同转为自动化流转，软件研发由局部的 CI/CD 工具实施转入全面的 DevOps 开发运维一体化。管理的挑战，已经不止于人与人之间的高效协同，而是人与机器的自动化协同。
-
-X-Developer 作为全球第一款事实数据型研发效能平台，我们首推国内领先的 **流程-度量-绩效** 闭环的解决方案，帮助企业提升研发管理的数字化能力。
+作为全球第一款事实数据型研发效能度量平台，X-Developer 已经拥有 300 多家注册客户，成为了国内服务规模最大的研发效能度量平台。通过与 X-Developer 紧密结合的 标准化-量化-优化 解决方案，我们帮助客户快速发现根本问题，提供针对性措施与落地指导，实现研发数字化能力与效能提升，并最终在 X-Developer 平台闭环度量成果。
 
 ## 新手必读
 
@@ -43,7 +41,7 @@ X-Developer 作为全球第一款事实数据型研发效能平台，我们首�
 
 - [GitHub](intergration/github.md)：最强大的在线代码托管平台
 - [GitLab](intergration/gitlab.md)：绝大多数企业自建私有代码托管平台的首选
-- [Coding.net](intergration/coding.md)：国产在线代码托管平台，提供私有部署
+- [Coding](intergration/coding.md)：国产在线代码托管平台，提供私有部署
 - [TravisCI](intergration/travis.md)：主流的持续集成云平台
 - [Jenkins](intergration/jenkins.md)：主流的持续集成开源工具
 
