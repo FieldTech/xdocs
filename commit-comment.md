@@ -53,6 +53,12 @@ X-Developer 的 `Simple Conventional Changelog` 使用一行带有需求编号�
 <no> <type> <subject>
 ```
 
+使用 `git` 的提交写法如下：
+
+```bash
+git commit -m "#123 fix 中文交互式支持"
+```
+
 ## 提交类型说明
 
 类型 | 类型说明 | 描述
