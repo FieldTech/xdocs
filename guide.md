@@ -2,7 +2,7 @@
 
 > X-Developer 是构建在 DevOps、CI/CD 之上的研发效能度量工具，与代码提交流程无缝结合，利用无须人工干预的真实数据进行效率分析，帮助开发团队实现更加精益高效的旅程。
 
-申请 X-Developer 试用之后，您将进入工作台页面，在这里可以看到所有已创建项目信息，以及帐户、订单、积分、发票和API菜单入口。
+购买 X-Developer 之后，您将进入工作台页面，在这里可以看到所有已创建项目信息，以及帐户、订单、积分、发票和API菜单入口。
 
 ## 使用流程
 
@@ -58,7 +58,7 @@ X-Developer 的手动分析功能，方便您利用手动生成的 Git 日志，
 
 - [GitHub](intergration/github.md)：最强大的在线代码托管平台
 - [GitLab](intergration/gitlab.md)：绝大多数企业自建私有代码托管平台的首选
-- [Coding.net](intergration/coding.md)：国产在线代码托管平台，提供私有部署
+- [Coding](intergration/coding.md)：国产在线代码托管平台，提供私有部署
 - [TravisCI](intergration/travis.md)：主流的持续集成云平台
 - [Jenkins](intergration/jenkins.md)：主流的持续集成开源工具
 

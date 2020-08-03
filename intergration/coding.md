@@ -1,4 +1,4 @@
-# Coding.net
+# Coding
 
 Coding 是一款国产研发管理平台，提供了 Git 代码仓库和持续集成功能。您可以通过内置的持续集成 `Jenkinsfile` 与 X-Developer 实现连接，自动化地完成效能分析：
 

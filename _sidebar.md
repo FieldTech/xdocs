@@ -3,7 +3,7 @@
     - 接入 CI/CD
         - [GitHub](intergration/github.md)
         - [GitLab](intergration/gitlab.md)
-        - [Coding.net](intergration/coding.md)
+        - [Coding](intergration/coding.md)
         - [TravisCI](intergration/travis.md)
         - [Jenkins](intergration/jenkins.md)
     - [使用权限](permission.md)
