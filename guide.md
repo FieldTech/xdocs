@@ -1,81 +1,39 @@
 # 快速上手
 
-> X-Developer 是构建在 DevOps 之上的研发效能度量工具，与代码提交流程无缝结合，实现无须人工干预的真实数据效率分析。
+> X-Developer 是研发全生命周期的数据管理与效能洞察平台，我们基于在自动化和研发效能领域的技术能力与经验，完全自主创新、自主研发了 X-Developer 平台，致力为您提供理念领先行业、技术自主可控的新一代研发数据分析工具。
 
-## 工作流程
+## X-Developer 是什么？
 
-如下图所示，创建团队后可选择手动在线分析或 API 集成 CI/CD 工具自动化效能分析，最终生成度量报告。
+X-Developer 是数据类产品，向 GIT 仓库及其它三方研发工具（如 Jira、SonarQube、Tempo Timesheet 等）自动化地完成数据采集，通过我们自主研发的效能分析引擎，X-Developer 最终为您生成研发管理、项目管理、工程管理、质量管理等多维度的指标和分析报表。
 
-```mermaid
-graph LR
-    team([创建团队]) --> API[[API]]
-    team --手动选项--> online([在线分析])
-    online --> upload([上传日志])
-    upload --> run([运行])
-    run --> analysis
-    subgraph 自动化过程
-        API --> GitHub([GitHub])
-        API --> GitLab([GitLab])
-        API --> Coding([Coding.net])
-        API --> Travis([TravisCI])
-        API --> Jenkins([Jenkins])
-        GitHub --Action--> auth((鉴权))
-        GitLab --job--> auth
-        Coding --job--> auth
-        Travis --job--> auth
-        Jenkins --Plugin--> auth
-        auth --> analysis((分析))
-        analysis --> reports(报告)
-        style reports fill:#f9f,stroke:#333,stroke-width:4px
-    end
-```
+## 产品体验流程
 
-## 创建团队
+X-Developer 提供了“免费诊断”帮助您获得第一份研发效能分析报告，无论注册用户还是访客，均可以使用免费诊断功能。
 
-如果您是首次使用 X-Developer ，工作台默认会出现创建团队的提示。
+如果您是首次使用 X-Developer ，请确保您会操作 Git 命令行以生成一份日志，以用于执行数据分析。
 
-![](_media/create-team.png)
-
-完成团队创建后，将进入空白的团队界面，并提示您运行分析。
-
-![](_media/wait-analysis.png)
-
-## 手动分析
-
-!> 适用于基础版用户。
-
-手动分析模式下，需要您自行生成 Git 日志。进入待分析的 Git 仓库，运行 Git 日志生成的命令如下：
+进入待分析的 Git 仓库，运行 Git 日志生成的命令如下：
 
 ```bash
 git log --pretty=format:"%an,%ae,%ad,%s" >> commits.csv
 ```
 
-选择“手动分析”，在弹出界面中选择您生成的日志 `commits.csv` ，再点击“查看报告”。
+进入 [免费诊断](https://x-developer.cn/discovery/) 将您生成的日志 `commits.csv` 拖入文件区域，分析将自动启动。
 
-![](_media/online-analysis.png)
+![](_media/discovery-upload.png)
 
-如果您的日志是从 `master` 导出，请勾选“Git仓库主干日志”，运行“查看报告”。
+根据日志文件的大小，您需要等待一至五分钟。
 
-![](_media/online-analysising.png)
+![](_media/discovery-processing.png)
 
-## 自动化分析
+分析完成后将看到查看按钮。
 
-!> 适用于专业版及企业版用户。
+![](_media/discovery-success.png)
 
-X-Developer 提供了对 GitHub、GitLab、Coding.net、TravisCI 以及 Jenkins 等主流工具的集成。选择您使用的工具，参照以下文档配置接入：
+## 团队洞察报告
 
-- [GitHub](intergration/github.md)：最强大的在线代码托管平台
-- [GitLab](intergration/gitlab.md)：绝大多数企业自建私有代码托管平台的首选
-- [Coding](intergration/coding.md)：国产在线代码托管平台，提供私有部署
-- [TravisCI](intergration/travis.md)：主流的持续集成云平台
-- [Jenkins](intergration/jenkins.md)：主流的持续集成开源工具
+在这份报告中，X-Developer 向您展示了团队相关的指标和行业对比。
 
-工具接入所需的身份验证及团队信息可在 [API](https://x-developer.cn/accounts/api) 页面查看。
+![](_media/discovery-team.png)
 
-如果您使用的工具未在此列，请在平台上提交反馈，或直接联系我们：[support@withfield.tech](mailto:support@withfield.tech)
-
-## 查看报告
-
-X-Developer 分析完成后，您将进入“概览”界面，向您呈现了项目的近期进展。
-
-![](_media/reports-progress.png)
+> 这只是免费体验的beta版本，我们会不断推出更多的免费体验报告指标。
