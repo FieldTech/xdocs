@@ -2,11 +2,13 @@
 
 > X-Developer 是研发全生命周期的数据管理与效能洞察平台，我们基于在自动化和研发效能领域的技术能力与经验，完全自主创新、自主研发了 X-Developer 平台，致力为您提供理念领先行业、技术自主可控的新一代研发数据分析工具。
 
-## X-Developer 是什么？
+## X-Developer 提供什么功能？
 
-X-Developer 是数据类产品，向 GIT 仓库及其它三方研发工具（如 Jira、SonarQube、Tempo Timesheet 等）自动化地完成数据采集，通过我们自主研发的效能分析引擎，X-Developer 最终为您生成研发管理、项目管理、工程管理、质量管理等多维度的指标和分析报表。
+作为数据类产品，X-Developer 提供的功能是向 GIT 仓库及其它三方研发工具（如 Jira、SonarQube、Tempo Timesheet 等）自动化地完成数据采集，通过我们自主研发的效能分析引擎，X-Developer 最终为您生成研发管理、项目管理、工程管理、质量管理等多维度的指标和分析报表。
 
-## 产品体验流程
+![交付洞察](_media/deep-insights.png)
+
+## X-Developer 体验流程
 
 X-Developer 提供了“免费诊断”帮助您获得第一份研发效能分析报告，无论注册用户还是访客，均可以使用免费诊断功能。
 
@@ -37,3 +39,7 @@ git log --pretty=format:"%an,%ae,%ad,%s" >> commits.csv
 ![](_media/discovery-team.png)
 
 > 这只是免费体验的beta版本，我们会不断推出更多的免费体验报告指标。
+
+## 您还可以免费查看 $X^d$ 指数
+
+基于平台数据生成的 [$X^d$ 指数](https://x-developer.cn/benchmark)，首批推出了交付周期时间、任务流畅度、提交活跃度、加班指数、深夜加班指数、BUGS & FIX 指数六大指标，供您进行对比。
