@@ -1,4 +1,4 @@
-# X-Developer <small>v1.3</small>
+# X-Developer <small>v2.0</small>
 
 > 研发速率度量与优化工具 :rocket::rocket::rocket:
 
