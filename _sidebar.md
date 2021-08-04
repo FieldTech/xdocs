@@ -8,7 +8,6 @@
         - [Jenkins](intergration/jenkins.md)
     - [使用权限](permission.md)
     - [常见问题](faq.md)
-    - [版本更新](updates.md)
 - 解决方案
     - [核心优势](advantage.md)
     - [产品说明](introduction.md)
@@ -22,6 +21,10 @@
         - [自动化看板应用](dem/kanban.md)
         - [团队效能管理](dem/team.md)
     - [应用场景](usage.md)
+- 路线图
+    - [版本更新](updates.md)
+- 平台运行状态
+    - [故障公示](maintenance/failure.md)
 - 关于我们
     - [场量科技](fieldtech.md)
     - [社区贡献](community.md)

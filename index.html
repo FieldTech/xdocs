@@ -8,9 +8,9 @@
   <meta name="description" content="Description">
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"/>
-  <script src="//unpkg.com/mermaid@8.5.1/dist/mermaid.min.js"></script>
+  <link rel="stylesheet" href="/assets/vue.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@8.5.1/dist/mermaid.min.js"></script>
   <script>
     if (document.location.host.indexOf("localhost") <= -1) {
       var _hmt = _hmt || [];
@@ -34,6 +34,9 @@
       repo: 'https://github.com/FieldTech/xdocs',
       coverpage: true,
       loadSidebar: true,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
       subMaxLevel: 2,
       search: {
         paths: 'auto',
@@ -87,20 +90,21 @@
       }
     }
   </script>
-  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
-  <script src="//unpkg.com/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-django.min.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-docker.min.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-git.min.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-json.min.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-markdown.min.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-python.min.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-yaml.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2.6.1/dist/docsify-pagination.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-django.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-docker.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-json.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-markdown.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-yaml.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/components/prism-git.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
 </body>
 
 </html>
