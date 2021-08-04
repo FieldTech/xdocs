@@ -1,6 +1,6 @@
 # X-Developer <small>v2.0</small>
 
-> 研发速率度量与优化工具 :rocket::rocket::rocket:
+> 研发数据管理与效能洞察平台 :rocket::rocket::rocket:
 
 - 零干预的研发数据采集
 - 适用于敏捷精益的指标
