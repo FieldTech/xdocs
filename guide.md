@@ -45,6 +45,6 @@ git log --pretty=format:"%an,%ae,%ad,%s" >> commits.csv
 
 > 这只是免费体验的beta版本，我们会不断推出更多的免费体验报告指标。
 
-## 您还可以免费查看 $X^d$ 指数
+## 行业指数
 
 V2.0 版本，我们基于平台数据生成 [$X^d$ 指数](https://x-developer.cn/benchmark)，首批推出了交付周期时间、任务流畅度、提交活跃度、加班指数、深夜加班指数、BUGS & FIX 指数六大指标，供您进行对比。
