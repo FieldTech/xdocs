@@ -1,5 +1,6 @@
 - 开始使用
-    - [快速上手](guide.md)
+    - [快速体验](guide.md)
+    - [分析项目](project.md)
     - 接入 CI/CD
         - [GitHub](intergration/github.md)
         - [GitLab](intergration/gitlab.md)
