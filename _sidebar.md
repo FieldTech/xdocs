@@ -1,12 +1,13 @@
 - 开始使用
     - [快速体验](guide.md)
-    - [分析项目](project.md)
-    - 接入 CI/CD
-        - [GitHub](intergration/github.md)
-        - [GitLab](intergration/gitlab.md)
-        - [Coding](intergration/coding.md)
-        - [TravisCI](intergration/travis.md)
-        - [Jenkins](intergration/jenkins.md)
+    - [数据集成](intergration/guide.md)
+    - [日志分析](project.md)
+      - 接入 CI/CD
+          - [GitHub](intergration/github.md)
+          - [GitLab](intergration/gitlab.md)
+          - [Coding](intergration/coding.md)
+          - [TravisCI](intergration/travis.md)
+          - [Jenkins](intergration/jenkins.md)
     - [使用权限](permission.md)
     - [常见问题](faq.md)
 - 解决方案
