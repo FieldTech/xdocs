@@ -1,4 +1,5 @@
 - 开始使用
+    - [平台介绍](readme.md)
     - [快速体验](guide.md)
     - [数据集成](intergration/guide.md)
     - [日志分析](project.md)
